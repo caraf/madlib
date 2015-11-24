@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js" type="text/javascript"></script>
+  </head>
+
+  <body ng-app="myApp" class="body">
+  <div class="mad-libs-heading">
+    <section class="smiley">
+      <img src="mad-lib-happy-face.png" style="width:100px;height:100px;">
+    </section>
+    <section class="logo">
+      <img src="ng-mad-libs-logo.png" style="width:100px;height:50px;">
+      <h1>Automate this!</h1>
+    </section>
+  <div class="std">
+    <p>Provide the following words:</p>
+    <p><input type="text" ng-model="maleName" ng-init="maleName='Male name'">
+    <input type="text" ng-model="dirtyTask" ng-init="dirtyTask='Dirty task'">
+    <input type="text" ng-model="obnoxiousCelebrity" ng-init="obnoxiousCelebrity='Obnoxious celebrity'"></p>
+    <p><input type="text" ng-model="jobTitle" ng-init="jobTitle='Job title'">
+    <input type="text" ng-model="celebrity" ng-init="celebrity='Celebrity'">
+    <input type="text" ng-model="hugeNumber" ng-init="hugeNumber='Huge number'"></p>
+    <p><input type="text" ng-model="tediousTask" ng-init="tediousTask='Tedious task'">
+    <input type="text" ng-model="uselessSkill" ng-init="uselessSkill='Useless skill'">
+    <input type="text" ng-model="adjective" ng-init="adjective='Adjective'"></p>
+  </div>
+
+   <div class="std2">
+   <p> {{maleName}} was a {{jobTitle}} who loved technology. Although he loved parts of his job, he absolutely hated  {{tediousTask}} and {{dirtyTask}}. So, {{maleName}} met with his life mentor {{celebrity}} who told him to learn how to {{uselessSkill}} with Thinkful. Thinkful didn't offer a course on {{uselessSkill}} so he studied programming instead. 
+ 
+ What a great decision! With his new skills, {{maleName}} built a(n) {{adjective}} robot named {{obnoxiousCelebrity}} that not only loved {{dirtyTask}} but did it {{hugeNumber}} times faster.
+   </p>
+   </div>
+
+  </div>
+  </body>
+
+</html>
+
